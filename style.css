@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    background-image: url('./img/weather-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    height: 100vh;
+
+}
+.heading{
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+/* General input styles */
+input {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Focus state for inputs */
+input:focus {
+    outline: none;
+    border-color: rgba(87, 68, 198, 0.8);
+    box-shadow: 0 0 8px rgba(87, 68, 198, 0.3);
+}
+
+/* Button styles */
+.btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background-color: rgb(87, 68, 198);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background-color: rgb(67, 48, 178);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Button active state */
+.btn:active {
+    background-color: rgb(47, 28, 158);
+}
+
+#result {
+    margin: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-size: 18px;
+    color: #333;
+    opacity: 0;
+    visibility: hidden;  
+    transition: opacity 2s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+#result.show {
+    opacity: 1;  
+    visibility: visible; 
+}
+
+
+
+/* Style for the weather header (city name) */
+.weather-header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #5744c6;
+    font-weight: bold;
+}
+
+/* Styling for weather information section */
+.weather-info {
+    margin-top: 10px;
+}
+
+.weather-info h3 {
+    font-size: 24px;
+    color: #9e2c2c;
+    margin: 10px 0;
+}
+
+.weather-info p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #7c8d77;
+}
+
+/* Adding a little bit of spacing */
+#result p {
+    line-height: 1.5;
+}
+
+/* Optional: Hover effect for the result box */
+#result:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
